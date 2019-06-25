@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Clínical Dental | Gonzalo Lopez Castro</title>
@@ -23,18 +23,14 @@
         crossorigin="anonymous"></script>
 
     <style>
-        body {
-            position: relative;
-        }
-
-        .sidebar {
+        #sidebar {
             width: 250px;
-            position: fixed;
+            position: sticky;
             top: 10px;
-            right: 0;
+            right: 10px;
             height: 100vh;
-            z-index: 999;
-            transition: all 0.3s;
+            min-height: 100vh;
+            z-index: 9999;
         }
 
         .wrapper {
@@ -45,96 +41,136 @@
 </head>
 
 <body data-spy="scroll" data-target="#info" data-offset="0">
-    <div class="wrapper">
-        <div class="container ">
-            <!-- Encabezado -->
-            <header class="col-xs-1-12 " style="background-color: white">
-                <p class="display-4 m-1 text-center">
-                    Clínica Dental
-                </p>
-                <p class="display-6 m-1 lead text-center">
-                    Dr. Gonzalo Lopez Castro
-                </p>
-                <hr class="m-1">
-                <nav class="nav justify-content-center">
-                    <a class="nav-link active" href="#">Inicio</a>
-                    <a class="nav-link" href="#">Contacto</a>
-                    <a class="nav-link" href="#">Área profesional</a>
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>+</span>
-                    </button>
-                </nav>
-
-            </header>
-
-            <!-- Cuerpo -->
-            <div class="" id="principal">
-                <div class="jumbotron" id="la-clinica">
-                    <h1 class="display-5">La Clínica</h1>
-                    <hr class="my-2">
-                    <p>La Clínica Dental situada en el corazón de la Ría de Arousa, en el centro de Pobra do
-                        Caramiñal,
-                        fue fundada por el Dr. Gonzalo López Castro en el año 1993.
-                        <br /><br />
-                        El equipo profesional que la integra, centra sus esfuerzos en proporcionar a nuestros
-                        pacientes
-                        atención especializada en Odontología en general, Periodoncia, Implantología y Cirugía.
-                        Para esto, contamos con las últimas tecnologías y sistemas más avanzados para el diagnóstico
-                        y tratamiento, lo que nos permite ofrecer la mejor solución ante cualquier problema.
-                    </p>
-                    <hr class="my-2">
-                    <img src="imagenes/fachada.jpg"
-                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
-                        alt="">
-                </div>
-                <div class="jumbotron" id="el-equipo">
-                    <h1 class="display-5">La Clínica</h1>
-                    <hr class="my-2">
-                    <p>La Clínica Dental situada en el corazón de la Ría de Arousa, en el centro de Pobra do
-                        Caramiñal,
-                        fue fundada por el Dr. Gonzalo López Castro en el año 1993.
-                        <br /><br />
-                        El equipo profesional que la integra, centra sus esfuerzos en proporcionar a nuestros
-                        pacientes
-                        atención especializada en Odontología en general, Periodoncia, Implantología y Cirugía.
-                        Para esto, contamos con las últimas tecnologías y sistemas más avanzados para el diagnóstico
-                        y tratamiento, lo que nos permite ofrecer la mejor solución ante cualquier problema.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <nav class="sidebar col-sm-12 col-ms-3 col-lg-3">
-            <div class="list-group">
-                <div class="form-group">
-                    <input type="text" name="" id="" class="form-control float-md-right" placeholder="Buscar"
-                        aria-describedby="helpId">
-                </div>
-                <a href="#la-clinica" class="list-group-item list-group-item-action active">La Clínica</a>
-                <a href="#el-equipo" class="list-group-item list-group-item-action">Equipo Profesional</a>
-                <a href="#las-instalaciones" class="list-group-item list-group-item-action">Instalaciones</a>
-                <a href="#el-tratamiento" class="list-group-item list-group-item-action">Tratamientos</a>
-                <a href="#los-documentos" class="list-group-item list-group-item-action">Documentos</a>
-                <a href="#los-enlaces" class="list-group-item list-group-item-action">Enlaces</a>
-                <a href="#la-sala" class="list-group-item list-group-item-action">Sala de prensa</a>
-                <a href="#contacto" class="list-group-item list-group-item-action">Contactar</a>
-                <a href="#area-profesional" class="list-group-item list-group-item-action">Area Profesional</a>
-            </div>
+    <div>
+        <!-- Encabezado -->
+        <header class="">
+            <p class="display-4 m-1 text-center">
+                Clínica Dental
+            </p>
+            <p class="display-6 m-1 lead text-center">
+                Dr. Gonzalo Lopez Castro
+            </p>
+            <hr class="m-1">
+        </header>
+        <nav class="nav justify-content-center sticky-top" style="background-color: white">
+            <a class="nav-link active" href="#">Inicio</a>
+            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#">Área profesional</a>
         </nav>
-    </div>
-    <script>
-        $(document).scroll(function () {
-            //calculating the minimal top position of the div
-            $('info').css('position', '');
-            top = $('info').offset().top;
 
-            $('info').css('position', 'absolute');
-            $('info').css('top', Math.max(top, $(document).scrollTop()));
-        });
-    </script>
-    <footer>
-        &nbsp;
-    </footer>
+        <div class="wrapper">
+            <div class="container">
+                <!-- Cuerpo -->
+                <div class="" id="principal">
+                    <div class="jumbotron pt-4" id="clinica">
+                        <h1 class="display-5">La Clínica</h1>
+                        <hr class="my-2">
+                        <p>Situada en el corazón de la Ría de Arousa, en el centro de Pobra do
+                            Caramiñal,
+                            fue fundada por el Dr. Gonzalo López Castro en el año 1993.
+                            <br /><br />
+                            El equipo profesional que la integra, centra sus esfuerzos en proporcionar a nuestros
+                            pacientes
+                            atención especializada en Odontología en general, Periodoncia, Implantología y Cirugía.
+                            Para esto, contamos con las últimas tecnologías y sistemas más avanzados para el diagnóstico
+                            y tratamiento, lo que nos permite ofrecer la mejor solución ante cualquier problema.
+                        </p>
+                        <hr class="my-2">
+                        <img src="imagenes/fachada.jpg" class="img-fluid" alt="Fachada principal de la clínica">
+                    </div>
+                    <div class="jumbotron pt-4" id="equipo">
+                        <h1 class="display-5">Equipo profesional</h1>
+                        <hr class="my-2">
+                        <p>La Clínica Dental situada en el corazón de la Ría de Arousa, en el centro de Pobra do
+                            Caramiñal,
+                            fue fundada por el Dr. Gonzalo López Castro en el año 1993.
+                            <br /><br />
+                            El equipo profesional que la integra, centra sus esfuerzos en proporcionar a nuestros
+                            pacientes
+                            atención especializada en Odontología en general, Periodoncia, Implantología y Cirugía.
+                            Para esto, contamos con las últimas tecnologías y sistemas más avanzados para el diagnóstico
+                            y tratamiento, lo que nos permite ofrecer la mejor solución ante cualquier problema.
+                        </p>
+                    </div>
+                    <div class="jumbotron pt-4" id="instalaciones">
+                        <h1 class="display-5">Instalaciones</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et pharetra pharetra.
+                            Odio tempor orci dapibus ultrices in iaculis nunc. Purus ut faucibus pulvinar elementum
+                            integer enim. Sit amet purus gravida quis blandit turpis cursus in hac. At tempor commodo
+                            ullamcorper a lacus vestibulum. Nunc mattis enim ut tellus. Lacus suspendisse faucibus
+                            interdum posuere. Nibh sit amet commodo nulla facilisi. Est pellentesque elit ullamcorper
+                            dignissim cras. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit
+                            ullamcorper. Leo vel orci porta non. Ac placerat vestibulum lectus mauris ultrices.
+                            Ullamcorper velit sed ullamcorper morbi.</p>
+                    </div>
+                    <div class="jumbotron pt-4" id="tratamientos">
+                        <h1 class="display-5">Tratamientos</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et pharetra pharetra.
+                                Odio tempor orci dapibus ultrices in iaculis nunc. Purus ut faucibus pulvinar elementum
+                                integer enim. Sit amet purus gravida quis blandit turpis cursus in hac. At tempor commodo
+                                ullamcorper a lacus vestibulum. Nunc mattis enim ut tellus. Lacus suspendisse faucibus
+                                interdum posuere. Nibh sit amet commodo nulla facilisi. Est pellentesque elit ullamcorper
+                                dignissim cras. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit
+                                ullamcorper. Leo vel orci porta non. Ac placerat vestibulum lectus mauris ultrices.
+                                Ullamcorper velit sed ullamcorper morbi.</p>
+                    </div>
+                    <div class="jumbotron pt-4" id="documentos">
+                        <h1 class="display-5">Documentos</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et pharetra pharetra.
+                                Odio tempor orci dapibus ultrices in iaculis nunc. Purus ut faucibus pulvinar elementum
+                                integer enim. Sit amet purus gravida quis blandit turpis cursus in hac. At tempor commodo
+                                ullamcorper a lacus vestibulum. Nunc mattis enim ut tellus. Lacus suspendisse faucibus
+                                interdum posuere. Nibh sit amet commodo nulla facilisi. Est pellentesque elit ullamcorper
+                                dignissim cras. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit
+                                ullamcorper. Leo vel orci porta non. Ac placerat vestibulum lectus mauris ultrices.
+                                Ullamcorper velit sed ullamcorper morbi.</p>
+                    </div>
+                    <div class="jumbotron pt-4" id="enlaces">
+                        <h1 class="display-5">Enlaces</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et pharetra pharetra.
+                                Odio tempor orci dapibus ultrices in iaculis nunc. Purus ut faucibus pulvinar elementum
+                                integer enim. Sit amet purus gravida quis blandit turpis cursus in hac. At tempor commodo
+                                ullamcorper a lacus vestibulum. Nunc mattis enim ut tellus. Lacus suspendisse faucibus
+                                interdum posuere. Nibh sit amet commodo nulla facilisi. Est pellentesque elit ullamcorper
+                                dignissim cras. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit
+                                ullamcorper. Leo vel orci porta non. Ac placerat vestibulum lectus mauris ultrices.
+                                Ullamcorper velit sed ullamcorper morbi.</p>
+                    </div>
+                    <div class="jumbotron pt-4" id="sala_prensa">
+                        <h1 class="display-5">Sala de prensa</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et pharetra pharetra.
+                                Odio tempor orci dapibus ultrices in iaculis nunc. Purus ut faucibus pulvinar elementum
+                                integer enim. Sit amet purus gravida quis blandit turpis cursus in hac. At tempor commodo
+                                ullamcorper a lacus vestibulum. Nunc mattis enim ut tellus. Lacus suspendisse faucibus
+                                interdum posuere. Nibh sit amet commodo nulla facilisi. Est pellentesque elit ullamcorper
+                                dignissim cras. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit
+                                ullamcorper. Leo vel orci porta non. Ac placerat vestibulum lectus mauris ultrices.
+                                Ullamcorper velit sed ullamcorper morbi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="d-none d-md-block">
+                <div class="list-group" id="info">
+                    <a href="#clinica" class="list-group-item list-group-item-action active">La Clínica</a>
+                    <a href="#equipo" class="list-group-item list-group-item-action">Equipo Profesional</a>
+                    <a href="#instalaciones" class="list-group-item list-group-item-action">Instalaciones</a>
+                    <a href="#tratamientos" class="list-group-item list-group-item-action">Tratamientos</a>
+                    <a href="#documentos" class="list-group-item list-group-item-action">Documentos</a>
+                    <a href="#enlaces" class="list-group-item list-group-item-action">Enlaces</a>
+                    <a href="#sala_prensa" class="list-group-item list-group-item-action">Sala de prensa</a>
+                </div>
+            </nav>
+            <footer>
+                &nbsp;
+            </footer>
+        </div>
+    </div>
 </body>
 
 </html>
