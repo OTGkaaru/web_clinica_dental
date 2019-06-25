@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Clínical Dental | Gonzalo Lopez Castro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            top: 10px;
+            right: 0;
+            height: 100vh;
+            z-index: 999;
+            transition: all 0.3s;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#info" data-offset="0">
+    <div class="wrapper">
+        <div class="container ">
+            <!-- Encabezado -->
+            <header class="col-xs-1-12 " style="background-color: white">
+                <p class="display-4 m-1 text-center">
+                    Clínica Dental
+                </p>
+                <p class="display-6 m-1 lead text-center">
+                    Dr. Gonzalo Lopez Castro
+                </p>
+                <hr class="m-1">
+                <nav class="nav justify-content-center">
+                    <a class="nav-link active" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#">Área profesional</a>
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>+</span>
+                    </button>
+                </nav>
+
+            </header>
+
+            <!-- Cuerpo -->
+            <div class="" id="principal">
+                <div class="jumbotron" id="la-clinica">
+                    <h1 class="display-5">La Clínica</h1>
+                    <hr class="my-2">
+                    <p>La Clínica Dental situada en el corazón de la Ría de Arousa, en el centro de Pobra do
+                        Caramiñal,
+                        fue fundada por el Dr. Gonzalo López Castro en el año 1993.
+                        <br /><br />
+                        El equipo profesional que la integra, centra sus esfuerzos en proporcionar a nuestros
+                        pacientes
+                        atención especializada en Odontología en general, Periodoncia, Implantología y Cirugía.
+                        Para esto, contamos con las últimas tecnologías y sistemas más avanzados para el diagnóstico
+                        y tratamiento, lo que nos permite ofrecer la mejor solución ante cualquier problema.
+                    </p>
+                    <hr class="my-2">
+                    <img src="imagenes/fachada.jpg"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                        alt="">
+                </div>
+                <div class="jumbotron" id="el-equipo">
+                    <h1 class="display-5">La Clínica</h1>
+                    <hr class="my-2">
+                    <p>La Clínica Dental situada en el corazón de la Ría de Arousa, en el centro de Pobra do
+                        Caramiñal,
+                        fue fundada por el Dr. Gonzalo López Castro en el año 1993.
+                        <br /><br />
+                        El equipo profesional que la integra, centra sus esfuerzos en proporcionar a nuestros
+                        pacientes
+                        atención especializada en Odontología en general, Periodoncia, Implantología y Cirugía.
+                        Para esto, contamos con las últimas tecnologías y sistemas más avanzados para el diagnóstico
+                        y tratamiento, lo que nos permite ofrecer la mejor solución ante cualquier problema.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <nav class="sidebar col-sm-12 col-ms-3 col-lg-3">
+            <div class="list-group">
+                <div class="form-group">
+                    <input type="text" name="" id="" class="form-control float-md-right" placeholder="Buscar"
+                        aria-describedby="helpId">
+                </div>
+                <a href="#la-clinica" class="list-group-item list-group-item-action active">La Clínica</a>
+                <a href="#el-equipo" class="list-group-item list-group-item-action">Equipo Profesional</a>
+                <a href="#las-instalaciones" class="list-group-item list-group-item-action">Instalaciones</a>
+                <a href="#el-tratamiento" class="list-group-item list-group-item-action">Tratamientos</a>
+                <a href="#los-documentos" class="list-group-item list-group-item-action">Documentos</a>
+                <a href="#los-enlaces" class="list-group-item list-group-item-action">Enlaces</a>
+                <a href="#la-sala" class="list-group-item list-group-item-action">Sala de prensa</a>
+                <a href="#contacto" class="list-group-item list-group-item-action">Contactar</a>
+                <a href="#area-profesional" class="list-group-item list-group-item-action">Area Profesional</a>
+            </div>
+        </nav>
+    </div>
+    <script>
+        $(document).scroll(function () {
+            //calculating the minimal top position of the div
+            $('info').css('position', '');
+            top = $('info').offset().top;
+
+            $('info').css('position', 'absolute');
+            $('info').css('top', Math.max(top, $(document).scrollTop()));
+        });
+    </script>
+    <footer>
+        &nbsp;
+    </footer>
+</body>
+
+</html>
